@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background Bars -->
+  <div class="bars-animation" aria-hidden="true">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home_info">
+      <h1>Rao Taha Ali</h1>
+      <h2>
+        I'm a
+        <span style="--i:1" data-text="Software Developer">Software Developer</span>
+        <span style="--i:2" data-text="Web Designer">Web Designer</span>
+        <span style="--i:3" data-text="UI/UX Engineer">UI/UX Engineer</span>
+        <span style="--i:4" data-text="Freelancer">Freelancer</span>
+      </h2>
+      <p>
+        Aspiring Software Developer skilled in Python, HTML, CSS, C, and Java.
+        Passionate about crafting clean, modern, and interactive web experiences.
+      </p>
+      <div class="btn-sci">
+        <a href="cv.png" target="_blank" class="btn">Download CV</a>
+        <div class="sci">
+          <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/taha-rao-0878b22b2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/taharao_x" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="WhatsApp Image 2025-10-28 at 10.02.43 AM.jpeg" alt="profile">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <h1 class="section-title">My <span>Skills</span></h1>
+    <div class="skills-container">
+      <div class="skill-card" style="--clr:#E34F26">
+        <i class="fa-brands fa-html5"></i>
+        <h2>HTML</h2>
+        <p>Building structured, semantic, and accessible web pages with clean markup.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#1572B6">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h2>CSS</h2>
+        <p>Designing responsive layouts using Flexbox, Grid, and animations.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#F7DF1E">
+        <i class="fa-brands fa-js"></i>
+        <h2>JavaScript</h2>
+        <p>Creating interactive and dynamic web experiences with efficient logic.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#3776AB">
+        <i class="fa-brands fa-python"></i>
+        <h2>Python</h2>
+        <p>Developing backend scripts, automation tools, and solving problems.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#00C853">
+        <i class="fa-solid fa-code"></i>
+        <h2>C / Java</h2>
+        <p>Strong foundation in programming, logic building, and OOP principles.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#FF4081">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>UI / UX Design</h2>
+        <p>Designing intuitive user interfaces with a focus on usability and creativity.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#00B8D4">
+        <i class="fa-solid fa-feather"></i>
+        <h2>Content Writing</h2>
+        <p>Crafting engaging blog posts, SEO-friendly content, and persuasive copywriting.</p>
+      </div>
+
+      <div class="skill-card" style="--clr:#9C27B0">
+        <i class="fa-solid fa-briefcase"></i>
+        <h2>Freelancing</h2>
+        <p>Delivering high-quality projects on time and building client relationships globally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h1 class="section-title">Latest <span>Projects</span></h1>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card">
+        <img src="qvl1.png" alt="Quran Verse Lookup">
+        <div class="project-body">
+          <h3>Quran Verse Lookup</h3>
+          <p class="project-short">
+            A Java and JavaFX-based Qur’an and Hadith Lookup System that enables users to search verses and Hadiths by keyword, Surah name, or verse number.
+          </p>
+          <div class="tech">
+            <span>Java</span> <span>OOP</span> <span>CLI</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p><strong>Features:</strong> Search by keyword, Surah name, or verse number with integrated Hadith lookup and user-friendly JavaFX interface.</p>
+            <p><strong>Run:</strong> Compile with <code>javac</code> and execute <code>java Main</code>.</p>
+          </details>
+          <div class="project-links">
+            <a href="https://github.com/raotaha34/Quran-and-Hadith-verses-lookup" target="_blank" class="btn-outline">View Code</a>
+            <a href="https://github.com/raotaha34/Quran-and-Hadith-verses-lookup" target="_blank" class="btn">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <img src="carbon (1).png" alt="Console Mini OS">
+        <div class="project-body">
+          <h3>Console Mini-OS (C)</h3>
+          <p class="project-short">
+            A small console OS shell emulator with commands, file simulation and process-like tasks.
+          </p>
+          <div class="tech">
+            <span>C</span> <span>Shell</span> <span>Systems</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p><strong>Features:</strong> Command-line interface with login system, file management, and process simulation.</p>
+          </details>
+          <div class="project-links">
+            <a href="https://github.com/raotaha34/Operating-System" target="_blank" class="btn-outline">View Code</a>
+            <a href="https://github.com/raotaha34/Operating-System" target="_blank" class="btn">Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <img src="cc.png" alt="Currency Converter">
+        <div class="project-body">
+          <h3>Currency Converter (JavaFX)</h3>
+          <p class="project-short">A desktop app built in JavaFX to convert between currencies with a clean UI.</p>
+          <div class="tech">
+            <span>Java</span> <span>JavaFX</span> <span>Desktop</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p><strong>Features:</strong> Choose source & target currencies, use live mock rates, copy result, responsive layout.</p>
+          </details>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-outline">View Code</a>
+            <a href="#" target="_blank" class="btn">Download</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <img src="ac.png" alt="Amazon Clone">
+        <div class="project-body">
+          <h3>Amazon Clone (MERN)</h3>
+          <p class="project-short">A simplified e-commerce clone with product listing, cart and checkout flow.</p>
+          <div class="tech">
+            <span>HTML</span> <span>CSS</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p><strong>Features:</strong> Dummy showcase of amazon.com layout.</p>
+          </details>
+          <div class="project-links">
+            <a href="https://raotaha34.github.io/Amazon-clone/" target="_blank" class="btn-outline">Visit Site</a>
+            <a href="https://raotaha34.github.io/Amazon-clone/" target="_blank" class="btn">View Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card">
+        <img src="carbon (2).png" alt="Encoder Decoder">
+        <div class="project-body">
+          <h3>Encoder / Decoder (Python)</h3>
+          <p class="project-short">Console utility to encode/decode strings (Caesar, Base64, custom schemes).</p>
+          <div class="tech">
+            <span>Python</span> <span>CLI</span> <span>Crypto</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p><strong>Features:</strong> Multiple encoding schemes, file I/O, encryption demo.</p>
+          </details>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-outline">Readme</a>
+            <a href="#" target="_blank" class="btn">View Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card">
+        <img src="tms.png" alt="Tenant Management System">
+        <div class="project-body">
+          <h3>Tenant Management System</h3>
+          <p class="project-short">Template slot for future projects (mini-games, tools, websites).</p>
+          <div class="tech">
+            <span>Tech 1</span> <span>Tech 2</span>
+          </div>
+          <details>
+            <summary>More details</summary>
+            <p>Add notes, how to run, and features here.</p>
+          </details>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-outline">view code</a>
+            <a href="#" target="_blank" class="btn">Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="WhatsApp Image 2025-10-28 at 10.02.43 AM.jpeg" alt="Rao Taha Ali">
+      </div>
+      <div class="about-content">
+        <h1>About <span>Me</span></h1>
+        <h3>Software Developer | Web Designer | Learner</h3>
+        <p>
+          I'm <strong>Rao Taha Ali</strong>, a passionate and self-driven developer who enjoys turning complex problems into simple, creative solutions. I love coding, designing, and bringing ideas to life through technology.
+        </p>
+        <p>
+          I have great knowledge in <strong>C</strong>, <strong>Python</strong>, <strong>Java</strong>, <strong>HTML</strong>, and <strong>CSS</strong>, plus a bit of <strong>JavaFX</strong>. Currently learning <strong>JavaScript</strong> and always exploring new tools that blend logic with design.
+        </p>
+        <div class="about-info">
+          <p><strong>Age:</strong> 20</p>
+          <p><strong>Email:</strong> raotaha33@gmail.com</p>
+          <p><strong>Location:</strong> Pakistan</p>
+        </div>
+        <a href="cv.png" class="btn" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h1>Contact <span>Me</span></h1>
+        <p>If you’d like to get in touch, collaborate, or have any questions, feel free to drop a message below!</p>
+        <div class="info-details">
+          <p><strong>Email:</strong> raotaha33@gmail.com</p>
+          <p><strong>Location:</strong> Pakistan</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
